@@ -50,13 +50,17 @@
             <h2>EMOTION-ALIGNED GENERATION IN DIFFUSION TEXT TO SPEECH MODELS VIA
               PREFERENCE-GUIDED OPTIMIZATION.</h2>
             <hr>
-            <p><strong>Target</strong>  : Target samples are provided for your reference.</a></p> 
+            <p><strong>Target</strong>  : Target samples are provided from ESD dataset.</a></p> 
             <p><strong>emospeech</strong>  : Baseline emospeech model.</a></p>
             <p><strong>cosyvoice2</strong>  : Baseline cosyvoice2 model.</a></p>
             <p><strong>Our EASPO</strong>  : Our proposed EASPO model.</a></p>
             <figure>
               <img src="icassp.png" alt="Trulli" style="width:100%">
-              <figcaption>Figure 1. Overview of the proposed EASPO approach: (a) instruction tuning, (b) EASPO training, and (c) the inference process.</figcaption>
+              <figcaption>Unlike prior DPO-based methods, EASPO avoids direct propagation of preferences across diffusion steps. At each step
+                Arcface Loss
+                in EASPO, a set of candidate samples is produced, from which a suitable win–lose pair is chosen to update the diffusion model.
+                Afterward, one sample is randomly picked CLEP
+                to serve as the starting point for the next iteration.</figcaption>
             </figure>
             <hr>
             <hr>
@@ -245,7 +249,7 @@
             <hr>
             <hr>
             <h5><small><strong>Sample 6 (Emotion: Sad) </strong></small></h4>
-            <h5><small>Text: I chose the right way.</small></h5>
+            <h5><small>Text: Must a name mean something?.</small></h5>
             <div>
               <table class="table">
                 <thead>
